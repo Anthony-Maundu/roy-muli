@@ -43,7 +43,7 @@ function App() {
                   <div className="absolute inset-0 bg-black opacity-40"></div>
                   <div className="relative container mx-auto flex flex-col items-center justify-center h-full text-white text-center">
                     <h1 className="text-5xl font-extrabold leading-tight mb-4">Financial Consultant & Psychologist</h1>
-                    <p className="text-lg text-white mb-8">Roy Muli brings over 25 years of expertise in finance, counseling, and academic mentorship.</p>
+                    <p className="text-lg text-white mb-8">25 years of expertise in finance, counseling, and academic mentorship.</p>
                     <a href="#about" className="bg-secondary text-white px-6 py-3 rounded-lg">Learn More</a>
                   </div>
                 </section>
