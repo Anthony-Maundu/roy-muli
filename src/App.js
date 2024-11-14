@@ -23,8 +23,8 @@ function App() {
       <section id="home" className="relative bg-cover bg-center h-screen pt-20" style={{ backgroundImage: "url('/path-to-image.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative container mx-auto flex flex-col items-center justify-center h-full text-white text-center">
-          <h1 className="text-5xl font-extrabold leading-tight mb-4">Roy Muli, Financial Consultant & Psychologist</h1>
-          <p className="text-lg mb-8">Bringing over 25 years of expertise in finance, counseling, and academic mentorship.</p>
+          <h1 className="text-5xl font-extrabold leading-tight mb-4">Financial Consultant & Psychologist</h1>
+          <p className="text-lg mb-8">Roy Muli brings over 25 years of expertise in finance, counseling, and academic mentorship.</p>
           <a href="#about" className="bg-secondary text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Learn More</a>
         </div>
       </section>
