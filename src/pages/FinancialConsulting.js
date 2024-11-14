@@ -6,7 +6,7 @@ function FinancialConsulting() {
     <div className="container mx-auto p-8 text-gray-700">
       <h2 className="text-4xl font-bold text-primary mb-6">Financial Consulting</h2>
       <p className="text-lg mb-6">
-        With over 25 years of experience, Roy Muli provides tailored financial consulting services aimed at optimizing 
+        Roy Muli provides tailored financial consulting services aimed at optimizing 
         financial health and achieving strategic growth. Our services focus on key areas such as investment, financial planning, 
         and risk management, helping individuals and businesses reach their financial goals.
       </p>

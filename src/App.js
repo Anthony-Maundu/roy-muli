@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from 'react-router-dom';
 import { FaHandshake, FaBrain, FaBalanceScale, FaChalkboardTeacher, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import './index.css';
 import royPhoto from './assets/roy-photo.jpg';
@@ -20,10 +20,10 @@ function App() {
           <div className="container mx-auto flex justify-between items-center">
             <h1 className="text-2xl font-bold">Roy Muli</h1>
             <ul className="flex space-x-6 font-semibold">
-              <li><a href="#home" className="hover:text-secondary">Home</a></li>
-              <li><a href="#about" className="hover:text-secondary">About</a></li>
-              <li><a href="#services" className="hover:text-secondary">Services</a></li>
-              <li><a href="#contact" className="hover:text-secondary">Contact</a></li>
+              <NavItem label="Home" section="home" />
+              <NavItem label="About" section="about" />
+              <NavItem label="Services" section="services" />
+              <NavItem label="Contact" section="contact" />
             </ul>
           </div>
         </nav>
@@ -124,5 +124,28 @@ function App() {
     </Router>
   );
 }
+
+// NavItem Component for smooth scrolling
+const NavItem = ({ label, section }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Delay to ensure the navigation occurs before scrolling
+  };
+
+  return (
+    <li>
+      <button onClick={handleClick} className="hover:text-secondary">
+        {label}
+      </button>
+    </li>
+  );
+};
 
 export default App;
