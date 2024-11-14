@@ -2,6 +2,7 @@ import React from 'react';
 import { FaHandshake, FaBrain, FaBalanceScale, FaChalkboardTeacher } from 'react-icons/fa';
 import './index.css';
 import royPhoto from './assets/roy-photo.jpg';
+import homeImage from './assets/home.jpg'; // Import the home image
 
 function App() {
   return (
@@ -20,7 +21,11 @@ function App() {
       </nav>
 
       {/* Home Section */}
-      <section id="home" className="relative bg-cover bg-center h-screen pt-20" style={{ backgroundImage: "url('/path-to-image.jpg')" }}>
+      <section 
+        id="home" 
+        className="relative bg-cover bg-center h-screen pt-20" 
+        style={{ backgroundImage: `url(${homeImage})` }} // Set the background image here
+      >
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative container mx-auto flex flex-col items-center justify-center h-full text-white text-center">
           <h1 className="text-5xl font-extrabold leading-tight mb-4">Financial Consultant & Psychologist</h1>
