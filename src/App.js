@@ -56,7 +56,7 @@ function App() {
                     className="w-40 h-40 rounded-full object-cover mb-4 md:mb-0 transform transition-transform duration-300 hover:scale-110" 
                   />
                   <div className="md:ml-6 text-center md:text-left">
-                    <h2 className="text-3xl font-semibold text-primary">Roy Muli</h2>
+                    <h2 className="text-3xl font-semibold text-primary">About</h2>
                     <p className="text-accent mt-2 leading-relaxed">
                       Roy Muli is a seasoned professional in finance, consulting, counseling psychology, and academia. His career has brought transformative insights and lasting impact across multiple sectors.
                     </p>
@@ -95,23 +95,28 @@ function App() {
                 </section>
 
                 {/* Contact Section */}
-                <section id="contact" className="container mx-auto p-8 max-w-lg bg-white rounded-lg shadow-lg mt-16 mb-16">
-                  <h2 className="text-3xl font-bold text-primary mb-6 text-center">Contact Roy Muli</h2>
-                  <div className="space-y-4 text-gray-700">
-                    <div className="flex items-center">
-                      <FaPhone className="text-primary text-2xl mr-3" />
-                      <span>0785762888, 0746936351, or 0722-709200</span>
-                    </div>
-                    <div className="flex items-center">
-                      <FaEnvelope className="text-primary text-2xl mr-3" />
-                      <span>roymuli@yahoo.com</span>
-                    </div>
-                    <div className="flex items-center">
-                      <FaMapMarkerAlt className="text-primary text-2xl mr-3" />
-                      <span>P.O. BOX 215-90202 NDOOA KITUI</span>
-                    </div>
-                  </div>
-                </section>
+<section id="contact" className="container mx-auto p-8 max-w-lg bg-white rounded-lg shadow-lg mt-16 mb-16">
+  <h2 className="text-3xl font-bold text-primary mb-6 text-center">Contact Roy Muli</h2>
+  <div className="space-y-4 text-gray-700">
+    <div className="flex items-center">
+      <FaPhone className="text-primary text-2xl mr-3" />
+      <span>0722709200, 0785762888 or 0746936351</span>
+    </div>
+    <div className="flex items-start">
+      <FaEnvelope className="text-primary text-2xl mr-3" />
+      <div>
+        <span>roymuli@yahoo.com</span>
+        <br />
+        <span>roymully@gmail.com</span>
+      </div>
+    </div>
+    <div className="flex items-center">
+      <FaMapMarkerAlt className="text-primary text-2xl mr-3" />
+      <span>P.O. BOX 215-90202 Ndooa Kitui</span>
+    </div>
+  </div>
+</section>
+
               </>
             }
           />
