@@ -68,31 +68,47 @@ function App() {
                 </section>
 
                 {/* Services Section */}
-                <section id="services" className="container mx-auto p-8 text-center mt-16">
-                  <h2 className="text-4xl font-bold text-primary mb-8">Our Services</h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <Link to="/financial-consulting" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <FaHandshake className="text-4xl text-primary mb-4" />
-                      <h3 className="text-2xl font-semibold text-secondary">Financial Consulting</h3>
-                      <p className="text-gray-600 mt-2">Expert advice in financial management and investment.</p>
-                    </Link>
-                    <Link to="/mental-health-counseling" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <FaBrain className="text-4xl text-primary mb-4" />
-                      <h3 className="text-2xl font-semibold text-secondary">Mental Health Counseling</h3>
-                      <p className="text-gray-600 mt-2">Guiding individuals through personal growth and well-being.</p>
-                    </Link>
-                    <Link to="/mediation-services" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <FaBalanceScale className="text-4xl text-primary mb-4" />
-                      <h3 className="text-2xl font-semibold text-secondary">Mediation Services</h3>
-                      <p className="text-gray-600 mt-2">Certified mediation to resolve conflicts efficiently.</p>
-                    </Link>
-                    <Link to="/academic-training" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                      <FaChalkboardTeacher className="text-4xl text-primary mb-4" />
-                      <h3 className="text-2xl font-semibold text-secondary">Academic Training</h3>
-                      <p className="text-gray-600 mt-2">Lectures on public finance, AI, and marketing.</p>
-                    </Link>
-                  </div>
-                </section>
+<section id="services" className="container mx-auto p-8 text-center mt-16">
+  <h2 className="text-4xl font-bold text-primary mb-8">Our Services</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    {/* Financial Consulting */}
+    <Link to="/financial-consulting" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <FaHandshake className="text-4xl text-primary mb-4" />
+      <h3 className="text-2xl font-semibold text-secondary">Financial Consulting</h3>
+      <p className="text-gray-600 mt-2">
+        Tailored strategies for budgeting, investments, and wealth management. Expert insights help secure financial futures and achieve lasting stability, backed by over 25 years of industry experience.
+      </p>
+    </Link>
+
+    {/* Mental Health Counseling */}
+    <Link to="/mental-health-counseling" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <FaBrain className="text-4xl text-primary mb-4" />
+      <h3 className="text-2xl font-semibold text-secondary">Mental Health Counseling</h3>
+      <p className="text-gray-600 mt-2">
+        Evidence-based counseling focused on emotional well-being, resilience, and personal growth. Support is designed to help individuals overcome challenges and find purpose in life.
+      </p>
+    </Link>
+
+    {/* Mediation Services */}
+    <Link to="/mediation-services" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <FaBalanceScale className="text-4xl text-primary mb-4" />
+      <h3 className="text-2xl font-semibold text-secondary">Mediation Services</h3>
+      <p className="text-gray-600 mt-2">
+        Certified mediation services to resolve conflicts effectively. A focus on fair, sustainable solutions ensures balanced outcomes that preserve relationships and foster mutual understanding.
+      </p>
+    </Link>
+
+    {/* Academic Training */}
+    <Link to="/academic-training" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <FaChalkboardTeacher className="text-4xl text-primary mb-4" />
+      <h3 className="text-2xl font-semibold text-secondary">Academic Training</h3>
+      <p className="text-gray-600 mt-2">
+        Engaging lectures on public finance, artificial intelligence, and marketing inspire learners to excel in their fields. Training sessions provide practical knowledge and foster professional growth.
+      </p>
+    </Link>
+  </div>
+</section>
+
 
                 {/* Contact Section */}
 <section id="contact" className="container mx-auto p-8 max-w-lg bg-white rounded-lg shadow-lg mt-16 mb-16">
