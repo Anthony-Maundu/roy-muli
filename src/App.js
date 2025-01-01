@@ -44,29 +44,32 @@ function App() {
                   <div className="absolute inset-0 bg-black opacity-40"></div>
                   <div className="relative container mx-auto flex flex-col items-center justify-center h-full text-white text-center">
                     <h1 className="text-5xl font-extrabold leading-tight mb-4">Tuzungumze Consultants Limited</h1>
-                    <p className="text-lg text-white mb-8">Empowering Growth, Fostering Well-being & Resolving Disputes.</p>
+                    <p className="text-lg text-white mb-8">Empowering Growth, Fostering Well-being &Resolving Disputes.</p>
                     <a href="#about" className="bg-secondary text-white px-6 py-3 rounded-lg">Learn More</a>
                   </div>
                 </section>
 
                 {/* About Section */}
-                <section id="about" className="container mx-auto p-8 flex flex-col md:flex-row items-center bg-white rounded-lg shadow-lg mt-16">
-                  <img 
-                    src={royPhoto} 
-                    alt="Roy Muli" 
-                    className="w-40 h-40 rounded-full object-cover mb-4 md:mb-0 transform transition-transform duration-300 hover:scale-110" 
-                  />
-                  <div className="md:ml-6 text-center md:text-left">
-                    <h2 className="text-3xl font-semibold text-primary">About Director/Founder</h2>
-                    <p className="text-accent mt-2 leading-relaxed">
-                      Roy Muli is a seasoned professional in finance, consulting, counseling psychology, and academia. His career has brought transformative insights and lasting impact across multiple sectors.
-                    </p>
-                    <div className="flex space-x-4 mt-4">
-                      <a href="#contact" className="bg-gray-200 text-primary px-4 py-2 rounded-lg">Contact Me</a>
-                      <a href="#services" className="bg-gray-200 text-primary px-4 py-2 rounded-lg">View Services</a>
-                    </div>
-                  </div>
-                </section>
+<section id="about" className="container mx-auto p-8 flex flex-col items-center bg-white rounded-lg shadow-lg mt-16">
+  <img 
+    src={royPhoto} 
+    alt="Roy Muli" 
+    className="w-52 h-58 rounded-full object-cover mb-6 transform transition-transform duration-300 hover:scale-110"
+  />
+  <div className="text-center">
+    <h2 className="text-3xl font-semibold text-primary">About Director/Founder</h2>
+    <p className="text-accent mt-2 leading-relaxed">
+      Roy Muli is a seasoned professional in finance & counseling psychology. He specializes in corporate training, management consultancy, financial marketing, resource mobilization, 
+      mental wellness, counseling services, and alternative dispute resolution.
+    </p>
+    <div className="flex space-x-4 mt-4 justify-center">
+      <a href="#contact" className="bg-gray-200 text-primary px-4 py-2 rounded-lg">Contacts</a>
+      <a href="#services" className="bg-gray-200 text-primary px-4 py-2 rounded-lg">Services</a>
+    </div>
+  </div>
+</section>
+
+
 
                 {/* Services Section */}
 <section id="services" className="container mx-auto p-8 text-center mt-16">
