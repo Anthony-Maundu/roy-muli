@@ -10,6 +10,7 @@ import FinancialConsulting from './pages/FinancialConsulting';
 import MentalHealthCounseling from './pages/MentalHealthCounseling';
 import MediationServices from './pages/MediationServices';
 import AcademicTraining from './pages/AcademicTraining';
+import ConsultancyPage from './pages/ConsultancyPage';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         {/* Navbar */}
         <nav className="bg-gray-800 text-white p-5 shadow-md fixed top-0 w-full z-50">
           <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-2xl font-bold">Roy Muli</h1>
+            <h1 className="text-2xl font-bold">TCL</h1>
             <ul className="flex space-x-6 font-semibold">
               <NavItem label="Home" section="home" />
               <NavItem label="About" section="about" />
@@ -42,8 +43,8 @@ function App() {
                 >
                   <div className="absolute inset-0 bg-black opacity-40"></div>
                   <div className="relative container mx-auto flex flex-col items-center justify-center h-full text-white text-center">
-                    <h1 className="text-5xl font-extrabold leading-tight mb-4">Financial Consultant & Psychologist</h1>
-                    <p className="text-lg text-white mb-8">25 years of expertise in finance, counseling, and academic mentorship.</p>
+                    <h1 className="text-5xl font-extrabold leading-tight mb-4">Tuzungumze Consultants Limited</h1>
+                    <p className="text-lg text-white mb-8">Empowering Growth, Fostering Well-being & Resolving Disputes.</p>
                     <a href="#about" className="bg-secondary text-white px-6 py-3 rounded-lg">Learn More</a>
                   </div>
                 </section>
@@ -56,7 +57,7 @@ function App() {
                     className="w-40 h-40 rounded-full object-cover mb-4 md:mb-0 transform transition-transform duration-300 hover:scale-110" 
                   />
                   <div className="md:ml-6 text-center md:text-left">
-                    <h2 className="text-3xl font-semibold text-primary">About</h2>
+                    <h2 className="text-3xl font-semibold text-primary">About Director/Founder</h2>
                     <p className="text-accent mt-2 leading-relaxed">
                       Roy Muli is a seasoned professional in finance, consulting, counseling psychology, and academia. His career has brought transformative insights and lasting impact across multiple sectors.
                     </p>
@@ -106,6 +107,15 @@ function App() {
         Engaging lectures on public finance, artificial intelligence, and marketing inspire learners to excel in their fields. Training sessions provide practical knowledge and foster professional growth.
       </p>
     </Link>
+
+    {/* Consultancy Page */}
+    <Link to="/consultancy" className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <FaChalkboardTeacher className="text-4xl text-primary mb-4" />
+      <h3 className="text-2xl font-semibold text-secondary">Consultancy</h3>
+      <p className="text-gray-600 mt-2">
+        Explore tailored solutions and expert advice to drive your business and personal growth. Our consultancy services cover finance, mental health, academic training, and more.
+      </p>
+    </Link>
   </div>
 </section>
 
@@ -140,6 +150,7 @@ function App() {
           <Route path="/mental-health-counseling" element={<MentalHealthCounseling />} />
           <Route path="/mediation-services" element={<MediationServices />} />
           <Route path="/academic-training" element={<AcademicTraining />} />
+          <Route path="/consultancy" element={<ConsultancyPage />} /> {/* Added ConsultancyPage route */}
         </Routes>
       </div>
     </Router>
